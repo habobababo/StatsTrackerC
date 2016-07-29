@@ -1,5 +1,4 @@
 
-
 local function Stats(ply)
 
 		local plyname = ply:Nick()
@@ -18,5 +17,3 @@ local function Stats(ply)
 		end)
 end
 hook.Add("PlayerInitialSpawn", "StatsTracking",  Stats)
-
-
