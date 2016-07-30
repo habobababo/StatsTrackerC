@@ -6,6 +6,7 @@ local function Stats(ply)
 		local uid = ply:UniqueID()
 		local UG = ply:GetUserGroup()
 		local NW = ply:GetNWString("usergroup")
+		if ply:IsBot() then return end
 		
 		corequery("SELECT * FROM users WHERE steamid = '"..ply:SteamID64().."' ", function(data)
 			if data[1] != nil then
